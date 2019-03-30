@@ -1,0 +1,21 @@
+{
+    "name": "hydrogen/hydrogen",
+    "description": "The hydrogen framework.",
+    "keywords": ["framework", "hydrogen"],
+    "license": "MIT",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "stability": "stable",
+    "require": {
+        "dilawsky/hydrogen-console": "dev-master",
+        "dilawsky/hydrogen-zipper": "dev-master",
+        "nesbot/carbon": "dev-master",
+        "vlucas/phpdotenv": "^2.5@dev",
+        "mongodb/mongodb": "^1.4"
+    }
+}
