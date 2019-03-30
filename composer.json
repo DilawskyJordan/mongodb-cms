@@ -9,7 +9,7 @@
             "src\\": "src/"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability": "stable",
     "require": {
         "dilawsky/hydrogen-console": "dev-master",
