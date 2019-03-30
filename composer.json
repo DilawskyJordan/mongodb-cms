@@ -1,7 +1,7 @@
 {
-    "name": "hydrogen/hydrogen",
-    "description": "The hydrogen framework.",
-    "keywords": ["framework", "hydrogen"],
+    "name": "hydrogen/cms",
+    "description": "The hydrogen framework cms.",
+    "keywords": ["framework", "hydrogen","cms","mongodb:],
     "license": "MIT",
     "type": "project",
     "autoload": {
