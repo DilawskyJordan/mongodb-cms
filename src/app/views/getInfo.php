@@ -30,7 +30,7 @@
 								<li>sudo chmod 777 src/app/views/</li>
 								<li>sudo chmod 777 src/app/http/storage</li>
 								<li>sudo chmod 777 src/app/http/storage/visitors.json</li>
-								<li>sudo chmod 777 myWeb/src/app/http/logs.txt</li>
+								<li>sudo chmod 777 src/app/http/logs.txt</li>
 								<li>cd src/app/http/storage</li>
 								<li>sudo chmod 777 /</li>
 								
