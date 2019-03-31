@@ -8,7 +8,7 @@ class InstallController {
 		if(!file_exists("src/app/http/storage/.env")) {
 			return $container->get("View")->show("getInfo");
 		}
-		echo "<p style='color: red;'>Remove src/app/http/storage/.env file to re-install !</p>";
+		echo "<p style='color: red;'>Remove src/app/http/storage/.env file and download view getInfo from github to re-install !</p>";
 		return 0;
 	}
 	public function postInfo($params, src\app\http\Controllers\Container $container) {
