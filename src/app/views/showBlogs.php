@@ -145,6 +145,7 @@
                   </tr>
                 </thead>
                 <tbody>
+                <? if(($posts) > 0): ?>
                   <? foreach($posts as $post): ?>
                   <tr>
                     <td> <a href="<? echo $this->url('b')."/".str_replace(" ", "-", $post->title); ?>"><? echo $post->title; ?></a></td>
@@ -152,6 +153,7 @@
                     <td><form method="POST" action="<? echo $this->url('deleteBlog') ?>"> <input type="hidden" name="_token" value="<? echo $token; ?>"> <input type="hidden" name="id" value="<? echo $post->_id; ?>">  <button type="submit" class="btn btn-danger">Delete</button></form></td>
                   </tr>
                 <? endforeach; ?>
+              <? endif; ?>
                 </tbody>
               </table>
             </div>
