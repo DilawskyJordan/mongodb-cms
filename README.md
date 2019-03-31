@@ -6,5 +6,7 @@ PHP : http://php.net
 # DB schema 
 After installing mongo database on you computer . create database `cms` ,and create 4 collection : `social`, `tasks`, `posts`, `visits`.
 How to config ? Go the /install
+# Download
+`sudo composer create-project --prefer-dist hydrogen/cms myWeb dev-master`
 # Me
 Email : walidlaggoune159@gmail.com
