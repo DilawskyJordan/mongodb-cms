@@ -8,5 +8,8 @@ After installing mongo database on you computer . create database `cms` ,and cre
 How to config ? Go the /install
 # Download
 `sudo composer create-project --prefer-dist hydrogen/cms myWeb dev-master`
+Before installing open terminal in your folder and run :
+`sudo chmod 777 src/app/http/logs.txt`
+`sudo composer dump -o`
 # Me
 Email : walidlaggoune159@gmail.com
