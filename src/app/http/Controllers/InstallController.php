@@ -21,7 +21,7 @@ class InstallController {
 			$email 				= 	$request->get("email");
 			$password 		= 	password_hash($request->get("password"), PASSWORD_BCRYPT, ["salt" => random_bytes(32)]);
 			$description 	= 	$request->get("description");
-
+			
 			$data = '
 	FIRSTNAME = "'.$firstname.'"
 	LASTNAME = "'.$lastname.'"
@@ -29,9 +29,10 @@ class InstallController {
 	WEBSITENAME = "'.$websitename.'"
 	PASSWORD = "'.$password.'"
 	DESCRIPTION = "'.$description.'"
-	';
+	';	
 
 			file_put_contents("src/app/http/storage/.env", $data);
+			$container->get("Helper")->saveSocial((new MongoDB\Client)->cms->social, $container->get("Request"));
 			unlink("src/app/views/getInfo.php");
 			return header("Location: ".$container->get("View")->url("home"));
 		}
