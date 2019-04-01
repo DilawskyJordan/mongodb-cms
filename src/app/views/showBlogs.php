@@ -145,7 +145,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                <? if(($posts) > 0): ?>
+                <? if(($posts) !== 0): ?>
                   <? foreach($posts as $post): ?>
                   <tr>
                     <td> <a href="<? echo $this->url('b')."/".str_replace(" ", "-", $post->title); ?>"><? echo $post->title; ?></a></td>
