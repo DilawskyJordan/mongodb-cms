@@ -7,16 +7,16 @@ use Carbon\Carbon as Carbon;
 class Helper {
 
 	public function data() {
-		$dotenv 							= 	new Dotenv(__DIR__, '../../app/http/storage/.env');
-		$data 								= 	$dotenv->load();
+		$dotenv =	new Dotenv(__DIR__, '../../app/http/storage/.env');
+		$data	= 	$dotenv->load();
 
 		return [
-			"firstname" 				=>	explode('"', $data[0])[1],
-			"lastname" 					=>	explode('"', $data[1])[1],
-			"websitename" 			=> 	explode('"', explode("=", $data[3])[1])[1],
-			"description"				=> 	explode('"', $data[5])[1],
-			"email" 						=> 	explode('"', $data[2])[1],
-			"password" 					=> 	explode('"', $data[4])[1]
+			"firstname"	=>	explode('"', $data[0])[1],
+			"lastname" 	=>	explode('"', $data[1])[1],
+			"websitename" 	=> 	explode('"', explode("=", $data[3])[1])[1],
+			"description"	=> 	explode('"', $data[5])[1],
+			"email" 	=> 	explode('"', $data[2])[1],
+			"password" 	=> 	explode('"', $data[4])[1]
 		];
 
 	}
